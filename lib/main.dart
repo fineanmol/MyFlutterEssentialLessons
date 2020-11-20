@@ -1,7 +1,5 @@
-import 'dart:js';
-
-import 'package:awesome_app/pages/home_page.dart';
-import 'package:awesome_app/pages/login_page.dart';
+import 'package:awesome_app1/pages/home_page.dart';
+import 'package:awesome_app1/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

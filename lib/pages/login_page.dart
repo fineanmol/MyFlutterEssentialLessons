@@ -1,6 +1,8 @@
-import 'package:awesome_app/bg_image.dart';
-import 'package:awesome_app/pages/home_page.dart';
+import 'package:awesome_app1/bg_image.dart';
+
 import 'package:flutter/material.dart';
+
+import '../bg_image.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -10,6 +12,8 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
+
+  String loggedIn;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,7 +64,8 @@ class _LoginPageState extends State<LoginPage> {
                               //     context,
                               //     MaterialPageRoute(
                               //         builder: (context) => HomePage()));
-                              Navigator.pushNamed(context, "/home");
+
+                              Navigator.pushReplacementNamed(context, "/home");
                             },
                             child: Text("Signin"),
                             color: Colors.orange,
