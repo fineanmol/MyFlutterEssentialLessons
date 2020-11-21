@@ -1,4 +1,5 @@
 import 'package:awesome_app1/pages/home_page.dart';
+import 'package:awesome_app1/pages/home_page_with_fb.dart';
 import 'package:awesome_app1/pages/login_page.dart';
 import 'package:awesome_app1/utils/constants.dart';
 import 'package:flutter/material.dart';
@@ -12,14 +13,14 @@ Future main() async {
       debugShowCheckedModeBanner: false,
       title: "Awesome App",
       home: Constants.prefs.getBool("loggedIn") == true
-          ? HomePage()
+          ? HomePageFB()
           : LoginPage(),
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
       routes: {
         "/login": (context) => LoginPage(),
-        "/home": (context) => HomePage(),
+        "/home": (context) => HomePageFB(),
       },
     ),
   );

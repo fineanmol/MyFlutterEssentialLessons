@@ -1,8 +1,8 @@
 import 'package:awesome_app1/utils/constants.dart';
+import 'package:awesome_app1/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import '../drawer.dart';
 
 class HomePage extends StatefulWidget {
   @override
