@@ -1,7 +1,5 @@
 import 'package:awesome_app1/bg_image.dart';
-
 import 'package:flutter/material.dart';
-
 import '../bg_image.dart';
 
 class LoginPage extends StatefulWidget {
